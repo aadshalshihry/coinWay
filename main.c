@@ -1,17 +1,19 @@
 /*
  * =====================================================================================
  *
- *       Filename:  way.c
+ *       Filename:  main.c
  *
- *    Description:  
+ *    Description:  Develop a recursive method to determine the number of 
+ *                  distinct ways in which a given amount of money in cents
+ *                  can be changed into quarters, dimes, nickels, and pennies
+ * 
+ *
  *
  *        Version:  1.0
  *        Created:  11/07/2015 21:51:45
- *       Revision:  none
  *       Compiler:  gcc
  *
- *         Author:  Roman - Abdulrahman Alshehri (), aalshehri08@hotmail.com
- *   Organization:  way2(m - coins(n), n)
+ *         Author:  Roman - Abdulrahman Alshehri, aalshehri@umassd.edu
  *
  * =====================================================================================
  */
@@ -19,13 +21,10 @@
 #include "coinWay.h"
 
 
-
+// getting input from stdin
 int main(int argc, char *argv[]){
-//    int input = atoi(argv[1]);
-//    int start = 4;
+    int input = atoi(argv[1]);
     
-
-//        printf("%d %d\n",input, way(input, start));
-    printf("%d\n", way(17, 1));
+    printf("%d\n", way(input, 4));
 
 }

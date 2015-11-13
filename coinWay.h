@@ -1,7 +1,7 @@
 /*
  * =============================================================================
  *
- *       Filename:  coinWay.
+ *       Filename:  coinWay.h
  *
  *    Description:  Develop a recursive method to determine the number of 
  *                  distinct ways in which a given amount of money in cents
@@ -24,7 +24,7 @@
 #include <stdlib.h>
 
 int coins(int d);
-int way(int m, int n);
+int way(int input, int num);
 
 #endif /* COINWAY_H */
 

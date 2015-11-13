@@ -38,11 +38,10 @@ int coins(int d)
 }
 
 
-int way(int m, int n)
+int way(int input, int num)
 {
-    static int a = 0;
-    if(n == 1 || m == 0) return 1;
-    if(m < 0) return 0;
-    return way(m, n-1) + way(m - coins(n), n);
+    if(num == 1 || input == 0) return 1;
+    if(input < 0) return 0;
+    return way(input, num-1) + way(input - coins(num), num);
   
 }
