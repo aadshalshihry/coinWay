@@ -23,8 +23,14 @@
 
 // getting input from stdin
 int main(int argc, char *argv[]){
-    int input = atoi(argv[1]);
-     printf("%d\n",way(input, 4));
+    if(argc == 1){
+        printf("[-] Error!: No input in stdin. Try again.\n");
+        exit(1);
+    }else {
+        int input = atoi(argv[1]);
+        printf("%d\n",way(input, 4));
+    }
+    
     
 
 }
