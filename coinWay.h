@@ -23,7 +23,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+int coins(int d);
+int way(int m, int n);
 
 #endif /* COINWAY_H */
 
