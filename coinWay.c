@@ -40,8 +40,18 @@ int coins(int d)
 
 int way(int input, int num)
 {
-    if(num == 1 || input == 0) return 1;
-    if(input < 0) return 0;
-    return way(input, num-1) + way(input - coins(num), num);
-  
+    if(num == 1){
+//        printf("input=%d, num=%d\n",input, num);
+
+        return 1;
+    }else if(input == 0){
+        return 1;
+    }else if(input < 0){
+        return 0;
+    }else {
+        
+        return way(input, num-1) + way(input - coins(num), num);
+    }
+
 }
+

@@ -26,6 +26,7 @@
 int coins(int d);
 int way(int input, int num);
 
+
 #endif /* COINWAY_H */
 
 

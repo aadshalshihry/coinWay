@@ -24,7 +24,7 @@
 // getting input from stdin
 int main(int argc, char *argv[]){
     int input = atoi(argv[1]);
+     printf("%d\n",way(input, 4));
     
-    printf("%d\n", way(input, 4));
 
 }
